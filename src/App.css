@@ -65,6 +65,12 @@
 .register{
   margin-left: 37%;
 }
+
+
+.login{
+  margin-left: 40%;
+  margin-top: 100px;
+}
 .inputbox{
   display: block;
   margin: 25px;

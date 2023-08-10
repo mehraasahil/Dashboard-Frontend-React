@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import SingUp from './Components/SignUp';
 import PrivateComponent from './Components/PrivateComponent';
+import Login from './Components/Login';
 
 
 
@@ -22,6 +23,7 @@ function App() {
    </Route>
 
    <Route path='/signup' element={<SingUp/>}/>
+   <Route path='/login' element={<Login/>}/>
   </Routes>
   <Footer/>
      </BrowserRouter>
