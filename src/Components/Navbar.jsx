@@ -15,6 +15,7 @@ const Navbar = () => {
 
   return (
     <div>
+    {auth ? 
       <ul className='nav-ul'>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/add'>Add Product</Link></li>
@@ -24,17 +25,20 @@ const Navbar = () => {
         {/* <li>{ auth ? <Link onClick={logout} to = '/signup'>Logout</Link>:
         <Link to = '/signup'>Sign Up</Link>}</li>
 
-        <li ><Link to = '/login' >Login</Link></li> */}
 
-        {
-          auth ?  <li><Link onClick={logout} to = '/signup'>Logout</Link></li>
-          :<>
+        <li ><Link to = '/login' >Login</Link></li> */}
+        <li><Link onClick={logout} to = '/signup'>Logout({JSON.parse(auth).name})</Link></li>
+    
+    </ul>
+    :
+      <ul className='nav-ul '>
           <li> <Link to = '/signup'>Sign Up</Link></li>
           <li ><Link to = '/login'>Login</Link></li>
-          </>
+          </ul>
         }
 
-      </ul>
+      
+    
     </div>
   )
 }

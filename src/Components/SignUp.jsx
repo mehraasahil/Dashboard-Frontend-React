@@ -39,7 +39,7 @@ const SingUp = () => {
 			<h1>Register</h1>
 			<div className="register">
 				<input type="text" className="inputbox" value={name} onChange={((e)=>setName(e.target.value))} placeholder="enter the name" />
-				<input type="text" className="inputbox" value={email} onChange={((e)=>setEmail(e.target.value))} placeholder="enter the email" />
+				<input type="email" className="inputbox" value={email} onChange={((e)=>setEmail(e.target.value))} placeholder="enter the email" />
 				<input type="password" className="inputbox" value={password} onChange={((e)=>setPassword(e.target.value))} placeholder="enter the password" />
 
 
